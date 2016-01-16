@@ -1,0 +1,12 @@
+applications:
+- name: pcfd
+  memory: 512M
+  # Add your name/initials to make the hostname unique
+  host: pcfd
+  # Currently defaults to PWS
+  #domain: app.10.68.47.185.xip.io 
+  domain: apps.pcf4u.com
+  path: pre-built/cf-spring-mvc-demo-0.0.1-SNAPSHOT.war
+  buildpack: 
+  env:
+    evtest: FromManifest
